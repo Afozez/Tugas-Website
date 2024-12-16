@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Eksternal css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- FontAwsome untuk icon-->
+        <script src="https://kit.fontawesome.com/2f4686a27c.js" crossorigin="anonymous"></script>
+
+        <!-- Font Lobster dan Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="wrapper">
+        <!-- Logo -->
+        <div class="brand-and-dropdown">
+            <div class="brand">
+                <h1>MovieSphere</h1>
+            </div>
+
+            <!-- dropdown list -->
+            <ul class="conatiner-dropdown">
+                <div id="toggle">
+                    <li>Lainnya</li>
+                    <i class="fa fa-sort-down"></i>
+                </div>
+                <ul id="dropdown-list">
+                    <li class="dropdown-item">Home</li>
+                    <li class="dropdown-item">Bookmark</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Search bar -->
+        <form id="formSearch">
+            <input type="search" placeholder="Pencarian" id="inputByUser">
+            <i class="fa fa-search"></i>
+        </form>
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="conatiner-list-movie">
+            <header class="title-list-movie">
+                <h4>Daftar FIlm</h4>
+            </header>
+
+            <!-- div untuk menampung daftar film -->
+            <div id="listMovie">
+                <div id="containerCard">
+
+                </div>
+                
+                <!-- pag,,ination -->
+                <div class="pagination">
+                    <button id="prev">Kembali</button>
+                    <p id="pageText">halaman 1</p>
+                    <button id="next">Berikutnya</button>
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="container-top-movie">
+            <header class="title-movie-top">
+                <h4>Teratas</h4>
+            </header>
+
+            <div id="listTopRated">
+
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MovieSphere</p>
+    </footer>
+    <script src="js/main.js"></script> 
+</body>
+</html>

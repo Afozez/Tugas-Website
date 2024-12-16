@@ -1,0 +1,324 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Start header */
+
+.wrapper {
+    /* display: flex; */
+    align-items: center;
+    gap: 50px   ;
+    background-color: black;
+    padding: 10px 40px;
+}
+
+.brand-and-dropdown {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* brand */
+
+.brand h1 {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 2.5em;
+}
+
+/* search bar */
+
+.wrapper form {
+    position: relative;
+    width: 50%;
+}
+
+.wrapper form input {
+    background-color: #111;
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.wrapper form input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.wrapper form i {
+    position: absolute;
+    right: 0;
+    padding: 12px 14px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+/* dropdown list */
+
+.conatiner-dropdown {
+    position: relative;
+    list-style-type: none;
+    z-index: 100;
+}
+
+.conatiner-dropdown div{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.conatiner-dropdown div li, i{
+    color: white;
+    font-weight: 600;
+}
+
+.conatiner-dropdown ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: orange;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.dropdown-item {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #FFB200;
+}
+
+.dropdown-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+/* End Header */
+
+
+/*  */
+main {
+    display: flex;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+/* header list film */
+.conatiner-list-movie {
+    width: 70%;
+}
+
+.title-list-movie, .title-movie-top {
+    background-color: orange;
+    color: white;
+    padding: 15px 0 0 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.title-list-movie h4, .title-movie-top h4 {
+    background-color: #111;
+    width: 200px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+/* list film */
+
+#listMovie {
+    background-color: #111;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#containerCard {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+}
+
+.card-movie {
+    height: 280px;
+}
+
+.card-image {
+    overflow: hidden;
+    width: 166px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.card-image img {
+    width: 166px;
+    height: 220px;
+    border-radius: 10px;    
+    cursor: pointer;
+}
+
+
+.card-image img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.card-movie p  {
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0 0 0;
+}
+
+.pagination button {
+    background-color: orange;
+    width: 120px;
+    padding: 10px 0;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pagination p {
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Aside */
+
+/* top anime */
+.container-top-movie {
+    width: 30%;
+    height: 660px;
+    background-color: #111;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0,0.1);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.ranking-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.ranking-card:last-child {
+    border: none;
+}
+
+.ranking-card h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.ranking-card img {
+    width: 60px;
+    height: 80px;
+}
+
+
+.title-rating p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title-rating i {
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #111;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+
+/* repsonsive */
+/* handphone 600px */
+
+@media only screen and (max-width: 600px) {
+    .wrapper form {
+        position: relative;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .conatiner-list-movie, .container-top-movie {
+        width: 100%;
+    }
+
+    #containerCard {
+        grid-template-columns: repeat(auto-fit, minmax(119px, 100px));
+        gap: 10px;
+    }
+
+    .card-movie {
+        height: 240px;
+    }
+    
+    .card-image {
+        overflow: hidden;
+        width: 119px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    .pagination {
+        margin: 0;
+    }
+}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper form {
+        position: relative;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    .conatiner-list-movie, .container-top-movie {
+        width: 100%;
+    }
+}
